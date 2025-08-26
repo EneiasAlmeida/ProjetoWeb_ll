@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Cadastrar Veículo</title>
+</head>
+<body class="bg-gray-900 min-h-screen">
+    <menu class="bg-gray-700 h-20 flex items-center justify-between px-6 space-x-4">
+        <h4 class="text-2xl font-bold tracking-tighter  ">
+            <span class="text-red-500">Speed<span><span class="text-white">Veiculos</span>
+        </h4>
+       
+        <div class="flex justify-end space-x-4">
+            <a href="#" class="bg-gray-700 text-white px-2 py-2 rounded hover:bg-red-600">Dashboard</a>
+            <a href="#" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-red-600">Cadastrar Veículo</a>
+            <a href="#" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-red-600">Veículos</a>
+            <a href="#" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-red-600">Relatórios</a>
+            <a href="#" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-red-600">Sair</a>
+        </div>
+    </menu>
+   <section class="flex justify-center mt-10 px-4">
+            <div class="bg-gray-800 text-white rounded-lg shadow-lg w-full max-w-6xl p-6">
+                <div class="text-center mb-6">
+                            <h2 class="text-4xl font-bold tracking-tighter mt-5 ">
+                                <span class="text-red-500">Speed<span><span class="text-white">Veiculos</span>
+                            </h2>
+                            <h3 class="text-gray-400 italic"> CONECTANDO VOCÊ AO SEU CLIENTE</h3>
+                        </div>
+
+                        <section class="bg-gray-900 p-4 mt-8 rounded ">
+        <article class="bg-gray-900 round p-4">
+            <h1 class="bg-gray-700 rounded text-white text-center text-lg font-bold">Cadastrar Veículo</h1>
+            <div class="grid grid-cols-2 px-2 pt-4 ">
+                <div>
+                    <label for="data-compra" class="font-bold block text-red-500">Data da Compra:</label>
+                    <input type="date" id="data-compra" name="data-compra" 
+                    class="bg-gray-400 text-black rounded p-1  w-full"
+                    placeholder="Ex: 20/10/2025">
+                </div>
+                <div>
+                <label  for="marca" class="font-bold block text-red-500">Marca:</label>
+                    <input type="text" id="marca" name="marca" 
+                    class="bg-gray-400 text-black rounded p-1 w-full"
+                    placeholder="Ex: Ex: 911 Carreira Cabriolet">
+                </div>
+                <div>
+                    <label for="modelo" class="font-bold block text-red-500">Modelo:</label>
+                    <input type="text" id="modelo" name="modelo" 
+                        class="bg-gray-400 text-black rounded p-1 w-full"
+                        placeholder="Ex: 911 Carreira Cabriolet">
+                </div>
+                <div>
+                    <label for="ano" class="font-bold block text-red-500">Ano/Fabricação:</label>
+                    <input type="text" id="ano" name="ano" 
+                        class="bg-gray-400 text-black rounded p-1 w-full"
+                        placeholder="Ex: 2005/2005">
+                </div>
+                <div>
+                    <label for="valor-compra" class="font-bold block text-red-500">Valor da Compra:</label>
+                    <input type="text" id="valor-compra" name="valor-compra" 
+                        class="bg-gray-400 text-black rounded p-1 w-full"
+                        placeholder="Ex: R$ 20.000,00">
+                </div>
+                <div>
+                    <label for="custo-total" class="font-bold block text-red-500">Custo Total:</label>
+                    <input type="text" id="custo-total" name="custo-total" 
+                        class="bg-gray-400 text-black rounded p-1 w-full"
+                        placeholder="Ex: R$ 20.000,00">
+                </div>
+                
+                <div>
+                    <label for="observações" class="font-bold block text-red-500">Observações:</label>
+                    <input type="text" id="observações" name="observações" 
+                        class="bg-gray-400 text-black rounded p-1 w-full"
+                        placeholder="Ex: observações">
+                </div>
+                <div>
+                    <label for="uploud" class="font-bold block text-red-500">Upload de anexos:</label>
+                    <input type="text" id="uploud" name="uploud" 
+                        class="bg-gray-400 text-black rounded p-1 w-full"
+                        placeholder="Ex: uploud">
+                </div>
+            </div>
+        </article>
+    </section>
+</div>
+            </section>
+        </body>
+</html>
