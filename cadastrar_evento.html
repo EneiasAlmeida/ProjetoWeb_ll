@@ -1,109 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Cadastrar Evento</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Cadastrar Evento</title>
 </head>
-<body class="bg-gray-900 min-h-screen">
-    <menu class="bg-gray-700 h-20 flex items-center justify-between px-6 space-x-4">
-        <h4 class="text-2xl font-bold tracking-tighter  ">
-            <span class="text-red-500">DebEne<span><span class="text-white">Eventos</span>
-        </h4>
-       
-        <div class="flex justify-end space-x-4">
-            <a href="#" class="bg-gray-700 text-white px-2 py-2 rounded hover:bg-red-600">Dashboard</a>
-            <a href="#" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-red-600">Cadastrar Veículo</a>
-            <a href="#" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-red-600">Veículos</a>
-            <a href="#" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-red-600">Relatórios</a>
-            <a href="#" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-red-600">Sair</a>
-        </div>
-    </menu>
-   <section class="flex justify-center mt-10 px-4">
-            <div class="bg-gray-800 text-white rounded-lg shadow-lg w-full max-w-6xl p-6">
-                <div class="text-center mb-6">
-                            <h2 class="text-4xl font-bold tracking-tighter mt-5 ">
-                                <span class="text-red-500">DebEne<span><span class="text-white">Eventos</span>
-                            </h2>
-                            <h3 class="text-gray-400 italic">"SEU EVENTO, NOSSA PAIXÃO EM CADA DETALHE"</h3>
-                        </div>
+<body class="bg-neutral-900 min-h-screen">
+  <!-- MENU -->
+  <menu class="bg-neutral-700 h-20 flex items-center justify-between px-6 space-x-4">
+    <h4 class="text-2xl font-bold tracking-tighter">
+      <span class="text-red-500">DebEne</span><span class="text-white">Eventos</span>
+    </h4>
+    <div class="flex justify-end space-x-4">
+      <a href="#" class="bg-neutral-700 text-white px-2 py-2 rounded hover:bg-red-600">Dashboard</a>
+      <a href="#" class="bg-neutral-700 text-white px-4 py-2 rounded hover:bg-red-600">Cadastrar Veículo</a>
+      <a href="#" class="bg-neutral-700 text-white px-4 py-2 rounded hover:bg-red-600">Veículos</a>
+      <a href="#" class="bg-neutral-700 text-white px-4 py-2 rounded hover:bg-red-600">Relatórios</a>
+      <a href="#" class="bg-neutral-700 text-white px-4 py-2 rounded hover:bg-red-600">Sair</a>
+    </div>
+  </menu>
 
-                        <section class="bg-gray-900 p-4 mt-8 rounded ">
-        <article class="bg-gray-900 round p-4">
-            <h1 class="bg-gray-700 rounded text-white text-center text-lg font-bold">Cadastrar Evento</h1>
-            <div class=" grid grid-cols-12  px-2 pt-4 ">
-                
-                 <label  for="code" class="font-bold block text-red-500">Code:</label>
-                    <input type="text" id="code" name="code" 
-                    class="bg-gray-400 text-black rounded p-1 w-full"
-                    placeholder="Ex: gerado automaticamente e ser único">
-                </div>
-                
-                <div>
-                    <label for="name" class="font-bold block text-red-500">Name:</label>
-                    <input type="text" id="name" name="name" 
-                    class="bg-gray-400 text-black rounded p-1 col-span-6 "
-                    placeholder="Ex: Enéias Trindade de Alemida">
-                </div>
-                <div>
-               
-                <div>
-                    <label for="location" class="font-bold block text-red-500">Location:</label>
-                    <input type="text" id="location" name="location" 
-                        class="bg-gray-400 text-black rounded p-1 col-span-6"
-                        placeholder="Ex: Espaço Gril Eventos">
-                </div>
-                <div>
-                    <label for="description" class="font-bold block text-red-500">Description:</label>
-                    <input type="text" id="description" name="description" 
-                        class="bg-gray-400 text-black rounded p-1 w-full"
-                        placeholder="Ex: Descrição  de como vai ser o evento Descrição  de como vai ser o evento Descrição  de como vai ser o evento Descrição  de como vai ser o eventoDescrição  de como vai ser o evento Descrição  de como vai ser o evento Descrição  de como vai ser o evento Descrição  de como vai ser o evento Descrição  de como vai ser o eventoDescrição  de como vai ser o evento Descrição  de como vai ser o evento Descrição  de como vai ser o evento Descrição  de como vai ser o evento Descrição  de como vai ser o evento Descrição  de como vai ser o evento Descrição  de como vai ser o evento Descrição  de como vai ser o evento Descrição  de como vai ser o evento Descrição  de como vai ser o evento">
-                </div>
-                <div>
-                    <label for="startDate" class="font-bold block text-red-500">StartDate:</label>
-                    <input type="date" id="startDate" name="startDate" 
-                    class="bg-gray-400 text-black rounded p-1 col-span-6"
-                    placeholder="Ex: 20/10/2025">
-                </div>
-                <div>
-                    <label for="endtDate" class="font-bold block text-red-500">EndDate:</label>
-                    <input type="date" id="endDate" name="endDate" 
-                    class="bg-gray-400 text-black rounded p-1  col-span-6"
-                    placeholder="Ex: 20/10/2025">
-                </div>
-                
+  <!-- CONTEÚDO -->
+  <section class="flex justify-center mt-10 px-4">
+    <div class="bg-neutral-800 text-white rounded-lg shadow-lg w-full max-w-5xl p-6">
+      <!-- Título -->
+      <div class="text-center mb-6">
+        <h2 class="text-4xl font-bold tracking-tighter mt-5">
+          <span class="text-red-500">DebEne</span><span class="text-white">Eventos</span>
+        </h2>
+        <h3 class="text-neutral-400 italic">"SEU EVENTO, NOSSA PAIXÃO EM CADA DETALHE"</h3>
+      </div>
+
+      <!-- FORM -->
+      <section class="bg-neutral-900 p-6 rounded">
+        <article class="bg-neutral-900 rounded p-4">
+          <h1 class="bg-neutral-700 rounded text-white text-center text-lg font-bold mb-6">Cadastrar Evento</h1>
+
+          <form class="grid grid-cols-12 gap-6">
+            <!-- CODE -->
+            <div class="col-span-12">
+              <label for="code" class="font-bold text-red-500">Code:</label>
+              <input type="text" id="code" name="code"
+                class="bg-neutral-400 text-black rounded p-2 w-full"
+                placeholder="Ex: gerado automaticamente e único" disabled>
             </div>
-        </article>
-    </section>
-</div>
-            </section>
-        </body>
-</html>
 
-//1. Criação de Evento: 
-//○ O campo code deve ser gerado automaticamente e ser único. 
-//○ Os campos name e location devem ter entre 5 e 150 caracteres e podem conter 
-//caracteres especiais. 
-//○ O campo name deve ser único no banco de dados. 
-//○ O campo description deve ter no máximo 500 caracteres. 
-//○ O campo startDate deve ser menor ou igual ao campo endDate. 
-//○ O campo  startDate deve ser maior ou igual à data atual. 
-//○ O campo  endDate deve ser maior ou igual ao campo startDate. 
-○ O campo description é opcional, todos os demais campos são obrigatórios. 
-//2. Atualização de Evento: 
-//○ Não é permitido alterar o código de um evento existente. 
-//○ Campos name e description devem passar pelas mesmas validações do momento 
-//de criação. 
-//○ O campo startDate pode ser alterado, mas deve continuar sendo maior ou igual à 
-//data atual. 
-//1/2 
-//Curso técnico em informática para internet 
-//Desenvolvimento Web II 
-//Regras de negócio do projeto 
-//Prof° Esp. Anderson Coimbra Choren 
-//○ O campo endDate pode ser alterado, mas nunca pode ser anterior ao startDate. 
-//3. Filtragem 
-//○ Ao realizar a busca de filmes, os campos location, startDate e endDate devem ser 
-//levados em consideração para a busca, sendo que apenas o campo location é 
-//obrigatório.
+            <!-- NAME e LOCATION lado a lado -->
+            <div class="col-span-6">
+              <label for="name" class="font-bold text-red-500">Name:</label>
+              <input type="text" id="name" name="name"
+                class="bg-neutral-400 text-black rounded p-2 w-full"
+                placeholder="Ex: Enéias Trindade de Almeida">
+            </div>
+            <div class="col-span-6">
+              <label for="location" class="font-bold text-red-500">Location:</label>
+              <input type="text" id="location" name="location"
+                class="bg-neutral-400 text-black rounded p-2 w-full"
+                placeholder="Ex: Espaço Grill Eventos">
+            </div>
+
+            <!-- DESCRIPTION (textarea maior) -->
+            <div class="col-span-12">
+              <label for="description" class="font-bold text-red-500">Description:</label>
+              <textarea id="description" name="description" rows="5" maxlength="500"
+                class="bg-neutral-400 text-black rounded p-2 w-full resize-none"
+                placeholder="Ex: Descrição detalhada de como vai ser o evento (máx 500 caracteres)"></textarea>
+            </div>
+
+            <!-- STARTDATE e ENDDATE lado a lado -->
+            <div class="col-span-6">
+              <label for="startDate" class="font-bold text-red-500">StartDate:</label>
+              <input type="date" id="startDate" name="startDate"
+                class="bg-neutral-400 text-black rounded p-2 w-full">
+            </div>
+            <div class="col-span-6">
+              <label for="endDate" class="font-bold text-red-500">EndDate:</label>
+              <input type="date" id="endDate" name="endDate"
+                class="bg-neutral-400 text-black rounded p-2 w-full">
+            </div>
+          </form>
+        </article>
+      </section>
+    </div>
+  </section>
+</body>
+</html>
